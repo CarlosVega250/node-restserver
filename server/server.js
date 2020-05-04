@@ -11,8 +11,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
 
-const userRoutes = require('./routes/usuario');
-app.use(userRoutes)
+app.use(require('./routes/index'));
+
+
 
 
 let connectToDB = async () => {
